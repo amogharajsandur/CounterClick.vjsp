@@ -2,5 +2,66 @@
     margin: 0;
     padding: 0;
     font-family: monospace, sans-serif;
+    font-size: 16px;
 }
 
+body {
+    height: 100vh;
+    background-color: #EFEFEF;
+    color: black;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    button {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        background-color: #EFEFEF;
+        border: 0.15rem solid black;
+        transition: ease-in-out 0.3s;
+        box-shadow: -0.15rem 0.2rem black;
+        outline: none;
+    }
+
+    button:hover {
+        transition: ease-in-out 0.3s;
+        box-shadow: -0.15rem 0.2rem black;
+        cursor: pointer;
+    }
+
+    button:active {
+        background-color: black;
+        border: 0.15rem solid #EFEFEF;
+        color: #EFEFEF;
+        box-shadow: -0.1rem 0.15rem 0.2rem black;
+    }
+
+        #decrease-value {
+            color: red;
+            /* background-color: red; */
+        }
+
+        #decrease-value:hover {
+            color: black;
+            background-color: red;
+        }
+
+        #increase-value {
+            color: green;
+            /* background-color: red; */
+        }
+
+        #increase-value:hover {
+            color: black;
+            background-color: green;
+        }
+
+#reset-value:hover {
+    color: red;
+}
